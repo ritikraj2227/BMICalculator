@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bmi Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="bmi-form">
+        <h1>Bmi Calculator</h1>
+        <button type="reset">Reset</button>
+        <h3>Select Your Gender &#63;</h3>
+        <div class="select-gender">
+          <div>
+            <div style="padding: 10px 0px">
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                autocomplete="off"
+                checked
+              />
+              <label for="male" id="male-label">
+                <span> &male; </span>
+              </label>
+            </div>
+            <span style="margin-left: 16px; padding-top: 15px">Male</span>
+          </div>
+          <div style="padding-left: 50px">
+            <div style="padding: 10px 0px">
+              <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+                autocomplete="off"
+              />
+              <label for="female">
+                <span> &#9792; </span>
+              </label>
+            </div>
+            <span style="margin-left: 10px; padding-top: 15px">Female</span>
+          </div>
+        </div>
+        <div class="age">
+          <label for="age" class="label-text">What is Your Age &#63;</label
+          ><br />
+          <input type="tel" id="age" placeholder="00" />
+        </div>
+
+        <div class="hnadw">
+          <div class="height">
+            <label for="height" class="label-text"
+              >What is Your Height &#63;</label
+            ><br />
+            <input
+              type="tel"
+              id="height"
+              class="input"
+              placeholder="000"
+            /><span>Cm</span>
+          </div>
+          <div class="weight">
+            <label for="weight " class="label-text"
+              >What is Your Weight &#63;</label
+            ><br />
+            <input type="tel" id="weight" placeholder="00" /><span>Kg</span>
+          </div>
+        </div>
+
+        <button type="button" class="calculate" id="btn-calculate">
+          Calculate Your BMI
+        </button>
+      </form>
+    </div>
+
+    <div class="modal-background">
+      <div class="modal">
+        <div class="modal-item">
+          <h2>Your BMI is</h2>
+          <p>&dArr;</p>
+          <h2 id="bmioutput"></h2>
+          <p id="bmi-comment"></p>
+          <button type="reset" class="calculate" id="bmi-recalculate">
+            Recalculate Your BMI
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

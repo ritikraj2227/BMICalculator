@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cadetblue;
+  transition: all 0.5s ease-in-out;
+}
+
+.container {
+  width: 375px;
+  height: 95%;
+  background-color: black;
+  color: aqua;
+  border: 4px solid black;
+  border-radius: 15px;
+  padding: 10px 20px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin: 10px 0px;
+}
+.container h1 {
+  display: inline-block;
+  text-align: left;
+  color: aqua;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.container button[type="reset"] {
+  background-color: rgb(45, 240, 240);
+  color: black;
+  padding: 4px 15px;
+  border-radius: 10px;
+  float: right;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.container h3 {
+  margin-top: 30px;
+  font-size: 15px;
+  padding: 0px 5px;
+}
+
+.select-gender {
+  padding: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  border-bottom: 1px solid cadetblue;
+}
+
+.select-gender input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.select-gender label {
+  display: inline-block;
+  background-color: rgba(179, 179, 179, 0.267);
+  padding: 10px 20px;
+  font-size: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.select-gender input[type="radio"]:checked + label {
+  background-color: rgb(0, 247, 255);
+  color: black;
+}
+
+.select-gender input[type="radio"]:focus + label {
+  background-color: aqua;
+}
+
+.age {
+  padding: 18px 0px;
+  border-bottom: 1px solid cadetblue;
+}
+
+input[type="tel"] {
+  border: 1px solid cadetblue;
+  width: 48px;
+  font-size: 40px;
+  background-color: transparent;
+  color: aqua;
+  border: none;
+  outline: none;
+  margin: 10px 0px;
+}
+
+input[type="tel"]:active {
+  border: none;
+  border-color: transparent;
+}
+
+.label-text {
+  font-size: 15px;
+}
+
+.hnadw {
+  display: flex;
+  column-gap: 55px;
+  padding: 20px 0;
+}
+
+.hnadw .input {
+  width: 68px;
+}
+
+form .calculate {
+  background-color: aquamarine;
+  color: black;
+  padding: 6px 50px;
+  border-radius: 17px;
+  font-size: 17px;
+  text-align: center;
+  display: block;
+  margin: 5px auto;
+  cursor: pointer;
+}
+
+.modal-background {
+  background-color: rgba(0, 0, 0, 0.61);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -500;
+  opacity: 0;
+}
+
+.modal-background.active {
+  z-index: 25;
+  opacity: 1;
+}
+.modal {
+  width: 375px;
+  height: 95%;
+  background-color: black;
+  color: aqua;
+  border: 4px solid rgb(255, 249, 249);
+  border-radius: 15px;
+  padding: 10px 10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin-top: 10px;
+  z-index: -500;
+  opacity: 0;
+}
+
+.modal.active {
+  z-index: 25;
+  opacity: 1;
+}
+
+.modal-item {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.modal-item h2 {
+  text-align: center;
+}
+
+#bmioutput {
+  font-size: 40px;
+  padding: 0 18px 0 0;
+}
+
+#bmi-comment {
+  padding: 20px 0 0 0;
+}
+
+.modal p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.modal-item .calculate {
+  background-color: aquamarine;
+  color: black;
+  padding: 6px 50px;
+  border-radius: 17px;
+  font-size: 17px;
+  text-align: center;
+  display: block;
+  margin: 5px auto;
+  margin-top: 45px;
+  cursor: pointer;
+}
