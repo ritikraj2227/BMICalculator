@@ -11,39 +11,45 @@ body {
 
 .container {
   width: 375px;
-  height: 546px;
+  height: 95vh;
   background-color: black;
   color: aqua;
-  border: 4px solid black;
-  border-radius: 15px;
-  padding: 10px 20px;
+  border-radius: 1rem;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 0%);
-  margin: 10px 0px;
-}
-.container h1 {
-  display: inline-block;
-  text-align: left;
-  color: aqua;
-  font-size: 2rem;
-  line-height: 3rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+  grid-gap: 1rem;
+  padding: 1.25rem;
+ 
 }
 
-.container button[type="reset"] {
+
+/*  Bmi Heading and Reset Button */
+.container .heading{
+  display: flex;
+  justify-content: space-between;
+  line-height: 2rem;
+}
+
+.heading .resetbtn {
+  display: block;
   background-color: rgb(45, 240, 240);
   color: black;
-  padding: 4px 15px;
+  padding: 4px 16px;
+  border: 1px;
   border-radius: 10px;
-  float: right;
-  margin-top: 15px;
   cursor: pointer;
+  margin-top: 8px;
+  height: 24px;
 }
 
-.container h3 {
-  margin-top: 30px;
+
+/* Gender Toggle Button */
+.gender h3{
   font-size: 15px;
-  padding: 0px 5px;
 }
 
 .select-gender {
@@ -77,41 +83,38 @@ body {
   background-color: aqua;
 }
 
+
+/* Age manu */
 .age {
-  padding: 18px 0px;
   border-bottom: 1px solid cadetblue;
 }
 
 input[type="tel"] {
-  border: 1px solid cadetblue;
-  width: 48px;
-  font-size: 40px;
+  width: 55px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 50px;
   background-color: transparent;
-  color: aqua;
+  text-align: start;
   border: none;
   outline: none;
   margin: 10px 0px;
-}
-
-input[type="tel"]:active {
-  border: none;
-  border-color: transparent;
 }
 
 .label-text {
   font-size: 15px;
 }
 
+/* Height and Weight */
 .hnadw {
   display: flex;
   column-gap: 55px;
-  padding-top: 20px;
-  padding-bottom: 12px;
 }
 
 .hnadw .input {
-  width: 68px;
+  width: 85px;
 }
+
 
 form .calculate {
   background-color: aquamarine;
@@ -121,8 +124,11 @@ form .calculate {
   font-size: 17px;
   text-align: center;
   display: block;
+  height: 35px;
   margin: 5px auto;
   cursor: pointer;
+
+
 }
 
 .modal-background {
@@ -140,18 +146,20 @@ form .calculate {
   z-index: 25;
   opacity: 1;
 }
+
 .modal {
   width: 375px;
-  height: 95%;
+  height: 95vh;
+  border-radius: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: black;
   color: aqua;
   border: 4px solid rgb(255, 249, 249);
   border-radius: 15px;
   padding: 10px 10px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  margin-top: 10px;
   z-index: -500;
   opacity: 0;
 }
@@ -198,3 +206,7 @@ form .calculate {
   margin-top: 45px;
   cursor: pointer;
 }
+
+
+
+

@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <form id="bmi-form">
+      <form id="bmi-form" class="container">
+       <div class="heading">
         <h1>Bmi Calculator</h1>
-        <button type="reset">Reset</button>
+        <button type="reset" class="resetbtn">Reset</button>
+      </div>
+        <div class="gender">
         <h3>Select Your Gender &#63;</h3>
         <div class="select-gender">
           <div>
@@ -46,6 +48,7 @@
             <span style="margin-left: 10px; padding-top: 15px">Female</span>
           </div>
         </div>
+      </div>
         <div class="age">
           <label for="age" class="label-text">What is Your Age &#63;</label
           ><br />
@@ -76,7 +79,7 @@
           Calculate Your BMI
         </button>
       </form>
-    </div>
+
 
     <div class="modal-background">
       <div class="modal">
